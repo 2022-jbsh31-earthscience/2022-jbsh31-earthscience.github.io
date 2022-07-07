@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>유체지구과학</title>
+</head>
+
+<body>
+	<a id="top"><br></a>
+	<button id="toTheTopBtn"><a href="#top" style="color: white;">▲</a></button>
+	<div style="text-align: center;">
+		<span class="title">
+			<h1>유체지구과학</h1>
+		</span>
+		<br><br>
+	</div>
+
+	<div class="main">
+		<h2>대기와 해양에 작용하는 힘</h2>
+
+		<h3>차원과 단위</h3>
+		<ul>
+			<li>유체의 운동을 지배하는 기본 법칙들은 차원 동일성의 원리를 따른다.</li>
+			<li>운동방정식의 모든 항들의 차원은 같아야한다.</li>
+			<li>단위는 SI단위를 사용한다.</li>
+		</ul>
+
+		<h3>SI 단위</h3>
+		<div class="imgDiv">
+			<img src="https://blog.kakaocdn.net/dn/bOKatO/btqLIHOb0EL/BTc8IQUE63iTNF0JRjfI0k/img.png" width="400px"><br>
+			<img src="https://mblogthumb-phinf.pstatic.net/MjAxOTA1MjNfMjUg/MDAxNTU4NTQ0MDUzODg1.zfQXK3AZm2dpu8X60YdyPkjQKj-L9O1uXfLzOezeaokg.SBwxYAZpGHzAhfPT_hcepEUe5Yo0p--3MmZzz-9TVBgg.PNG.findinggod/SI_%EC%A0%91%EB%91%90%EC%96%B4.png?type=w800"
+				width="600px"><br>
+		</div>
+		<ul>
+			<li>특별한 이름을 갖는 SI 유도단위</li>
+			<li>진동수 헤르츠(Hz), 힘 뉴턴(N), 기압 파스칼(Pa), 에너지 줄(J), 일률 와트(W)</li>
+		</ul>
+
+		<h3>기본 물리 법칙</h3>
+		<ul>
+			<li>질량, 운동량, 에너지 보존 법칙이 유체의 운동을 지배한다.</li>
+			<li>유체의 운동을 기술하는 방정식(운동방정식)을 세우기 위해서 유체에 작용하는 힘의 특성을 이해해야 한다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\newton's 2nd law.jpg" width="500px">
+		</div>
+
+		<h3>기본 힘</h3>
+		<ul>
+			<li>유체에 작용하는 주요 힘들은 압력 경도력, 만유인력, 마찰력 등이 있다.</li>
+			<li>전향력은 겉보기 힘이기 때문에 포함하지 않음</li>
+			<li>기본 힘 vs 겉보기 힘</li>
+			<ul>
+				<li>기본 힘: 물체에 작용해 모양을 변화시키거나 운동상태를 변화시키는 원인</li>
+				<li>겉보기 힘: 관성좌표계가 아닌 좌표계에서 운동방정식에 포함하는 힘 ex) 코리올리힘(전향력), 원심력</li>
+			</ul>
+		</ul>
+
+		<h4>좌표계</h4>
+		<ul>
+			<li>관성좌표계와 비관성좌표계로 분류</li>
+			<li>관성좌표계: 좌표계 자체가 고정되어 있어 뉴턴 제 1법칙(관성의 법칙)이 적용 가능한 좌표계</li>
+			<li>비관성좌표계: 좌표계가 가속되고 있어 뉴턴 제 1법칙(관성의 법칙)이 적용 불가능한 좌표계</li>
+		</ul>
+
+		<h3>압력 경도력</h3>
+		<ul>
+			<li>Pressure gradient force (줄여서 PGF라고도 부름)</li>
+			<li>압력 차이로 발생하는 힘</li>
+
+		</ul>
+		<div class="imgDiv">
+			<img src="https://blog.kakaocdn.net/dn/rKwIN/btru8UC7cs3/5n9OU6O4r2h7s02UwcXjkk/img.png" width="400px"
+				style="background-color: white;"><br>
+			<img src=".\img\pgf.jpg" width="800px">
+		</div>
+
+		<h3>만유인력</h3>
+		<ul>
+			<li>Universal gravitation</li>
+			<li>질량을 가진 물체에 작용하는 힘</li>
+			<li>중력은 만유인력과 다름(중력은 지구에서의 원심력까지 고려한 힘)</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\universal gravitation.jpg" width="300px">
+		</div>
+
+		<h4>지구의 만유인력</h4>
+		<ul>
+			<li>만유인력은 거리에 따라 달라지므로 높이에 따라 만유인력의 크기가 달라질 수 있다.</li>
+			지구의 평균 반지름을 a, 평균해면으로부터 거리를 z, 지구를 완전한 구로 가정하면,<br>
+		</ul>
+
+		<div class="imgDiv">
+			<img src=".\img\지구 만유인력 가속도-fixed.png" width="150px">
+		</div>
+
+		<h3>마찰력</h3>
+		<ul>
+			<li>유체는 내부 마찰(점성)의 영향을 받으므로, 이 마찰이 유체의 움직임에 저항하는 역할을 한다.</li>
+			<li>매우 작은 값이기 때문에 대부분 무시할 수 있지만, 지표 근처(경계층)에서는 무시하면 안되며, 점성마찰을 고려해야 한다.</li>
+		</ul>
+
+		<h3>겉보기 힘</h3>
+		<ul>
+			<li>지구와 함께 자전하는 좌표계에서는 겉보기 힘을 포함해야 한다.</li>
+			<li>좌표가 가속되는 경우 겉보기 힘을 도입한다. (뉴턴의 운동법칙 적용)</li>
+			<ul>
+				<li>원심력, 전향력</li>
+			</ul>
+		</ul>
+
+		<h3>관성좌표계와 회전좌표계의 방정식</h3>
+		<div class="imgDiv">
+			<img src=".\img\관성,회전좌표계 방정식.jpg" width="800px"><br>
+			<img src=".\img\관성,회전좌표계 방정식2.jpg" width="800px">
+		</div>
+
+
+		<h3>원심력</h3>
+		<ul>
+			<li>Centrifugal force</li>
+			<li>회전운동 또는 좌표계의 회전으로 나타나는 겉보기 힘</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\구심가속도.png" width="800px"><br>
+			<img src=".\img\구심가속도2_img.png" width="350px"><br>
+			<img src=".\img\구심가속도2.jpg" width="800px">
+		</div>
+
+
+		<h3>지구에서의 중력</h3>
+		<ul>
+			<li>지구 위의 물체는 지구 중심 방향으로 만유인력을 받고 있으며, 자전에 따른 회전 운동으로 인한 원심력이 작용한다.</li>
+			<li>지구 위의 물체에 작용하는 중력은 만유인력과 원심력의 합력이다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\위도별중력.jpg" width="800px">
+		</div>
+
+		<h3>위도에 따른 중력 차이</h3>
+		<ul>
+			<li>극지역에서 원심력이 0이고 만유인력이 최대이므로 중력이 최대가 된다.</li>
+			<li>적도지역에서 원심력이 최대이고 만유인력이 최소이므로 중력이 최소가 된다.</li>
+		</ul>
+
+		<h3>적도지역과 극지역의 중력 차이</h3>
+		<ul>
+			<li>지구 자전에 의한 원심가속도에 의해 적도 지역의 중력가속도가 작아진다.</li>
+			<li>지구가 회전타원체이기 때문에 적도 지역이 부풀어 있어 질량 중심까지의 거리가 증가해 중력가속도가 작아진다.</li>
+			<li>부풀어 오른 부분의 질량에 의해 중력가속도가 커진다.</li>
+		</ul>
+
+		<h3>지구타원체</h3>
+		<ul>
+			<li>지구는 자전에 의한 원심력 때문에 구에 가까운 회전타원체 모양을 한다(적도 반지름이 극반지름보다 약간 길다).</li>
+			<li>지구의 모습을 비교적 실제와 가깝게 나타낸 기하학적인 회전타원체를 지구타원체라 한다.(가상의 타원체)</li>
+			<li>편평도 f = (a - b) / a (a가 장반경)</li>
+			<li>지구의 편평도는 거의 1/300으로 구에 가깝다.</li>
+		</ul>
+
+		<h3>지구를 정확하게 표현하고 싶어!</h3>
+		<ul>
+			<li>지표면은 매끄럽지 않고 여러 지형이 있으므로 기하학적인 타원체보다 실제에 가깝게 지구의 모습을 표현하기 위해
+				지오이드로 나타낸다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\지오이드.png" width="500px" style="background-color: white;"><br>
+			<img src=".\img\지오이드2.jpg" width="600px">
+		</div>
+
+		<h3>지오이드</h3>
+		<ul>
+			<li>지구 위에서 해발고도를 측정하는 기준이 되는 가상의 면</li>
+			<li>지오이드는 등지오퍼텐셜면 중 평균해수면과 가장 잘 일치하는 면이며, 중력가속도를 측정할 때 기준이 된다.</li>
+			<li>물체는 지오이드에 수직 방향의 중력을 받는다.</li>
+			<h4>지오퍼텐셜</h4>
+			<ul>
+				<li>지구의 중력장 안에서 같은 위치퍼텐셜에너지를 갖는 면</li>
+				<li>ⲫ = g * z (ⲫ: 질량당 위치퍼텐셜 에너지)</li>
+			</ul>
+		</ul>
+
+		<h3>중력 측정</h3>
+		<ul>
+			<li>어느 지점에서 중력가속도는 중력계나 단진자, 낙하속도 등을 이용해 측정할 수 있다.</li>
+		</ul>
+
+		<h3>전향력</h3>
+		<ul>
+			<li>Coriolis force</li>
+			<li>회전하고 있는 물체가 운동할 때 나타나는 겉보기 힘</li>
+			<li>북반구 => 운동방향의 오른쪽 직각방향</li>
+			<li>남반구 => 운동방향의 왼쪽 직각방향</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\coriolis force.png" width="300px"><br>
+			<img src=".\img\코리올리 가속도 유도.png" width="800px"><br>
+			<img src=".\img\코리올리 가속도.jpg" width="800px"><br>
+			<img src=".\img\코리올리 가속도2.png" width="300px"><br>(연직방향은 크기에 따라 무시 가능)<br><br>
+			<img src=".\img\코리올리 가속도3.png" width="200px"><br>(오메가는 지구 자전 가속도 (2pi/24h))
+		</div>
+		<ul>
+			<li>전향력은 위도에 따라 값이 달라진다.</li>
+			<li>적도지역에서는 전향력이 0이며, 극지역에서 전향력이 최대가 된다.</li>
+			<li>전향력은 북반구에서 운동방향의 오른쪽 직각방향으로 작용한다.</li>
+		</ul>
+
+		<h3>푸코진자</h3>
+		<ul>
+			<li>지구의 자전을 증명하기 위해 고안된 장치</li>
+			<li>지구의 자전에 의해 접평면이 시계반대방향으로 회전한다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\푸코진자.jpg" width="800px"><br>
+			<img src=".\img\푸코진자_moving.gif" width="500px"><br>
+			<img src=".\img\푸코진자 회전주기.png" width="800px"><br>
+		</div>
+
+		<h3>운동방정식</h3>
+		<div class="imgDiv">
+			<img src=".\img\운동방정식.png" width="800px"><br>
+		</div>
+
+		<h3>국지 좌표계</h3>
+		<ul>
+			<li>앞의 운동방정식은 자전축을 중심으로 설정되어 있으므로 위도 phi에 위치한 관측자 중심의 국지 좌표계를 설정해야 한다.</li>
+		</ul>
+
+		<h3>국지 좌표계에서의 코리올리 가속도</h3>
+		<div class="imgDiv">
+			<img src=".\img\국지 좌표계 코리올리 가속도.png" width="800px"><br>
+			<img src=".\img\국지 좌표계 코리올리 가속도2.png" width="800px">
+		</div>
+		지운 부분은 규모가 큰 범위에서는 미치는 영향이 미미하여 무시할 수 있음.<br>
+		f => 코리올리 파라미터<br>
+		fv 해석: y방향으로 v의 속력으로 움직이는 물체에 대해 오른쪽 직각으로 힘이 작용함<br>
+		fu 해석: x방향으로 u의 속력으로 움직이는 물체에 대해 오른쪽 직각(결국 아래쪽)으로 힘이 작용함
+
+		<h3>국지 좌표계에서의 운동방정식</h3>
+		<div class="imgDiv">
+			<img src=".\img\국지 좌표계 운동방정식.png" width="800px">
+		</div>
+
+		<h3>규모분석</h3>
+		<ul>
+			<li>운동방정식의 여러 항들의 크기를 추정해 비교한다.</li>
+			<li>마찰력, z방향의 코리올리힘, z방향의 가속도는 너무 작아서 무시 가능</li>
+			<li>x, y방향의 가속도는 상황에 따라 무시할 수도 있음(지균풍에서는 무시, 경도풍에서는 무시X)</li>
+		</ul>
+
+		<h3>운동방정식</h3>
+		<ul>
+			<li>규모분석을 적용한 최종적인 운동방정식은 다음과 같다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\운동방정식-최종.png" width="400px">
+		</div>
+
+
+		<br><br>
+		<h2>힘들의 평형 관계 - 연직 방향의 운동</h2>
+
+		<h3>정역학 평형</h3>
+		<ul>
+			<li>연직방향의 압력경도과 증력이 평형을 이루는 상태</li><br>
+			<div class="imgDiv">
+				<img src=".\img\정역학 평형.png" width="400px"><br> ==> 외워!!
+			</div>
+			<li>대기와 해수의 경우 연직 압력경도력이 중력과 평형을 이루어 연직 순환보다는 수평 순환이 더 활발하게 일어난다.</li>
+		</ul>
+
+		<h3>정역학 방정식</h3>
+		<div class="imgDiv">
+			<img src=".\img\정역학 방정식.png" width="800px">
+		</div>
+
+		<h3>고도와 기압</h3>
+		<ul>
+			<li>정역학 방정식을 이용해 특정 고도에서의 기압을 구할 수 있다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\기압-공기무게.png" width="800px">
+		</div>
+
+
+		<h3>층후</h3>
+		<ul>
+			<li>정역학 방정식을 이용해 특정 기압면 사이의 층의 두께(층후)를 구할 수 있다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\층후.jpg" width="800px">
+		</div>
+
+		<h3>고도에 따른 기압의 변화</h3>
+		<div class="imgDiv">
+			<img src=".\img\고도에 따른 기압 변화.png" width="800px">
+		</div>
+		<ul>
+			<li>고도가 높아질수록 기압은 지수적으로 감소한다.</li>
+			<li>규모고도는 기압이 1/e만큼 감소하는 고도이며 273K의 대기에서는 약 8km이다.</li>
+			<li>대기의 꼭대기라고 표기하기도 한다.</li>
+		</ul>
+
+		<h3>수심과 수압</h3>
+		<ul>
+			<li>정역학방정식을 이용해 특정 수심에서의 수압을 구할 수 있다.</li>
+			<li>수심 10m 깊어질 때마다 1기압씩 증가한다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\수심 수압.jpg" width="600px">
+		</div>
+
+		<h3>연직방향의 운동</h3>
+		<ul>
+			<li>대기의 경우 연직 방향의 가속도는 매우 작아 정역학평형을 이루고 있다.</li>
+			<li>그러나 규모가 작은 운동은 연직 방향의 가속도가 중요하게 작용한다.</li>
+		</ul>
+
+		<br><br>
+		<h2>힘들의 평형 관계 - 수평 방향의 운동</h2>
+
+		<h3>힘의 평형</h3>
+		<ul>
+			<li>유체에 작용하는 여러 힘들의 균형관계를 방정식을 이용해 표현할 수 있다.</li>
+			<li>수평 움직임은 규모에 따라 기압경도력, 전향력, 원심력 등의 힘의 균형으로 설명된다.</li>
+			<li>지균균형, 경도균형, 관성균형, 선형균형</li>
+			<ul>
+				<li>지균균형: 전향력과 기압경도력이 평형을 이룬 상태</li>
+				<li>경도균형: 전향력, 기압경도력, 원심력 모두가 평형을 이룬 상태</li>
+				<li>관성균형: 전향력과 원심력이 평형을 이룬 상태</li>
+				<li>선형균형: 기압경도력과 원심력이 평형을 이룬 상태</li>
+			</ul>
+		</ul>
+
+		<h3>지균평형(지균균형)</h3>
+		<ul>
+			<li>수평방향의 압력경도력과 전향력이 평형을 이루는 상태</li>
+			<li>지균풍은 대기에서 수평 기압경도력과 전향력이 평형을 이루었을 때의 운동이다.</li>
+			<li>지형류는 해양에서 수평 수압경도력과 전향력이 평형을 이루었을 때의 운동이다.</li>
+		</ul>
+
+		<h3>지균풍</h3>
+		<ul>
+			<li>Geostrophic Wind</li>
+			<li>수평 기압경도력과 전향력이 균형을 이루고 있을 때 부는 가상의 바람</li>
+			<li>지균풍은 등압선과 나란하게 분다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\지균풍.png" width="400px">
+		</div>
+
+		<h3>지균균형 과정</h3>
+		<ul>
+			<li>기압차이가 있는 경우 기압경도력에 의해 공기덩어리가 고압부에서 저압부로 이동한다.</li>
+			<li>공기덩어리가 이동하면서 전향력이 작용한다.</li>
+			<li>공기덩어리의 속도가 증가하면서 전향력이 점차 커지면서 평형을 이룬다.</li>
+			<li>이때의 상태를 지균균형이라 하고, 이때 부는 바람을 지균풍이라 한다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\지균균형 과정.jpg" width="400px">
+		</div>
+
+		<h3>지균풍</h3>
+		<div class="imgDiv">
+			<img src=".\img\지균풍 방향.jpg" width="800px">
+		</div>
+
+		<h3>수압경도력</h3>
+		<ul>
+			<li>해수의 압력경도력는 다양한 방법으로 생성될 수 있다.</li>
+			<li>해수면의 높이가 달라지는 경우 수압경도력이 발생할 수 있다.</li>
+			<li>해수의 밀도가 달라지는 경우 수압경도력이 발생할 수 있다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\수압경도력.jpg" width="600px">
+		</div>
+
+		<h3>지형류</h3>
+		<ul>
+			<li>Geostrophic current</li>
+			<li>수평 수압경도력과 전향력이 균형을 이루고 있을 때 부는 가상의 해양 흐롬</li>
+			<li>지형류는 등수압선과 나란하게 나타난다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\지형류.jpg" width="800px">
+		</div>
+
+		<h3>해류</h3>
+		<ul>
+			<li>대규모의 해류는 지형류의 성질을 지닌다.</li>
+			<li>에크만 수송으로 해수가 이동하면서 해수면의 경사가 발생하고, 수압경도력이 발생한다.</li>
+			<li>수압경도력과 전향력이 평향을 이루어 형성되는 해수가 지형류이다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\적도 반류1.png" width="600px"><br>
+			<img src=".\img\itcz.jpg" width="800px" style="background-color: white;">
+		</div>
+
+		<h3>마귤러 방정식</h3>
+		<ul>
+			<li>지형류 평형을 유지하는 다층 해양에서 인접한 두 층의 경사를 상층과 하층의 밀도와 지형류 속도로 일반화한 방정식</li>
+			<li>실제 해양은 여러개의 층으로 구성되어 있다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\마귤러 방정식.jpg" width="300px">
+		</div>
+		<ul>
+			<li>다층 구조로 일반화하면 다음과 같은 방정식을 얻을 수 있다.</li>
+			<li>밀도가 다른 층이 존재하는 해양에서 유속을 계산할 때 유용하게 사용된다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\마귤러 증명.png" width="600px"><br>
+			<img src=".\img\마귤러 증명2.png" width="800px">
+		</div>
+
+		<h3>수온약층의 경사</h3>
+		<ul>
+			<li>해양이 두 층으로 구성되어 있으며, 해류는 표층에만 한정되고 수온약층 아래에는 지형류가 거의 존재하지 않는다고 가정</li>
+			<li>해수면의 경사보다 수온약층의 경사가 더 크게 나타난다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\마귤러 방정식 특수해.png" width="700px">
+		</div>
+
+		<h3>자연좌표계</h3>
+		<ul>
+			<li>유체의 흐름을 따라 이동하는 좌표계</li>
+			<li>S축을 흐름의 방향으로, n축을 운동방향의 왼쪽 직각방항으로 정의한다.</li>
+			<li>s방향 단위벡터 t-hat, n방향 단위벡터 n-hat, 연직방향 단위벡터 k-hat</li>
+			<li>바람의 성분을 분해할 필요가 없기 때문에 편리하다!</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\자연좌표계.png" width="300px">
+		</div>
+
+		<h3>직교좌표계와 자연좌표계</h3>
+		<ul>
+			<li>직교좌표계를 이용해 운동을 표현하면 복잡하기 때문에 자연좌표계를 이용해 간단하게 표현할 수 있다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\직교좌표 to 자연좌표.png" width="800px">
+		</div>
+
+		<h3>자연좌표계</h3>
+		<div class="imgDiv">
+			<img src=".\img\자연좌표계 운동방정식.jpg" width="800px">
+		</div>
+
+		<h3>지균풍</h3>
+		<ul>
+			<li>지균풍은 등고선에 평행하게 운동하므로 R이 ±∞인 운동이다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\지균풍 자연좌표계.jpg" width="800px">
+		</div>
+
+		<h3>관성풍(관성류)</h3>
+		<ul>
+			<li>intertia wind(inertia current)</li>
+			<li>수평 압력경도력이 없을 때, 전향력과 원심력이 균형을 이루고 있을 때의 운동</li>
+			<li>시계 방향으로만 나타난다.</li>
+			<li>대기의 경우 수평 기압경도력이 없는 경우가 드물기 때문에 관성 운동이 잘 일어나지 않는다.</li>
+			<li>But, 바다의 경우에는 간혹 일어난다.</li>
+			<li>관성운동은 북반구에서 시계방향으로 나타나며, 주기는 접평면의 회전주기의 반절에 해당한다.</li>
+			<li>__가 구심력으로 작용한다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\관성풍 주기.jpg" width="600px">
+		</div>
+
+		<h3>선형풍(선형류)</h3>
+		<ul>
+			<li>cyclostrophic flow</li>
+			<li>소규모운동에서 전향력의 영향이 거의 없을 때, 수평 압력경도력과 원심력이 균형을 이룰 때의 운동</li>
+			<li>전향력이 없으므로 구심력의 방향이 특정되지 않음 → 회전 방향 상관 없음</li>
+			<li>수평 압력경도력이 구심력으로 작용한다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\선형풍.png" width="800px"><br>
+			<img src=".\img\선형풍 회전.png" width="600px"><br>
+			⇒ 둘 다 내부가 저기압
+		</div>
+
+		<h3>경도풍(경도류)</h3>
+		<ul>
+			<li>gradient wind(gradient current)</li>
+			<li>곡선 경로로 움직이는 경우 수평 압력경도력, 전향력, 원심력이 균형을 이룰 때의 흐름</li>
+			<li>수평 압력경도력과 전향력의 크기 차이가 구심력으로 작용한다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\경도풍.png" width="800px"><br>
+			<img src=".\img\저,고기압성 경도풍.png" width="800px"><br>
+			경도풍의 중심부가 각각 저기압, 고기압인 상황에서 PGF의 크기가 같다면,<br>
+			CoF의 크기는 고기압일 때 더 크다.<br>
+			<div style="color: DeepPink;">
+				⇒ 고기압성경도풍이 저기압성경도풍보다 빠르다.
+			</div>
+		</div>
+		<ul>
+			<li>V는 0보다 커야하며 실수여야 한다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\경도풍 방정식 경우의 수.jpg" width="800px"><br>
+		</div>
+
+		<h3>정상저기압과 정상고기압</h3>
+		<div class="imgDiv">
+			<img src=".\img\정상저기압 정상고기압 비교.png" width="800px"><br>
+			&rArr; 정상저기압이 정상고기압보다 생길 수 있는 범위가 넓음
+		</div>
+
+		<h3>경도풍과 지균풍의 관계</h3>
+		<ul>
+			<li>정상저기압의 경우 fR>0이므로 지균풍이 경도풍보다 더 빠르다.</li>
+			<li>정상고기압의 경우 fR&lt;0이므로 경도풍이 지균풍보다 더 빠르다.</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\경도풍 지균풍 관계.jpg" width="800px"><br>
+		</div>
+
+		<h3>지상풍과 상공풍</h3>
+		<ul>
+			<li>지표면과 마찰의 영향이 나타나는 고도 1km 이내(경계층)에서 부는 바람을 지상풍이라 한다.</li>
+			<li>고도 1km 이상의 상층(자유대기층)에서 부는 바람을 상공풍이라 한다.</li>
+		</ul>
+
+		<h3>경계층과 자유대기</h3>
+		<ul>
+			<li>경계층은 지표면의 영향을 받는 대기층이며, 자유대기는 지표면의 영향을 받지 않는 대기층이다.</li>
+			<li>경계층의 높이는 약 1km 정도이다.</li>
+		</ul>
+
+		<h3>지상풍</h3>
+		<ul>
+			<li>지상풍은 마찰에 의해 등압선에 비스듬하게 불며, 지표면의 상태에 따라 경각이 달라진다.</li>
+			<li>마찰이 강할수록 경각은 증가한다.</li>
+			<li>경각은 육상에서 30~35&deg;, 해상에서 20~25&deg;</li>
+		</ul>
+		<div class="imgDiv">
+			<img src=".\img\지상풍 개요.jpg" width="600px"><br>
+		</div>
+
+		<h3>지상일기도와 상층일기도</h3>
+		<ul>
+			<li>지상일기도</li>
+			<ul>
+				<li>등압선으로 표시</li>
+				<li>등압선에 비스듬하게 바람이 붐</li>
+				<li>풍속이 비교적 약함</li>
+			</ul>
+			<li>상층일기도</li>
+			<ul>
+				<li>등고선으로 표시</li>
+				<li>등압선에 나란하게 바람이 붐</li>
+				<li>풍속이 비교적 강함</li>
+			</ul>
+		</ul>
+
+		<h3>에크만 나선</h3>
+		<ul>
+			<li>지표면에서 상공으로 갈수록 마찰이 감소하므로 풍속이 증가하고 경각이 감소한다.</li>
+			<li>고도에 따른 바람벡터의 끝을 투영하면 나선이 그려지는데, 이를 에크만 나선이라 한다.</li>
+		</ul>
+
+		<h3>제트기류</h3>
+		<ul>
+			<li>상층으로 갈수록 기압경도력이 증가하며 풍속이 강해져 대류권계면 근처에서 가장 강하게 나타나는데,
+				이를 제트기류라 한다.</li>
+		</ul>
+</body>
+
+</html>
